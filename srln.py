@@ -35,7 +35,7 @@ if __name__ == '__main__':
         except Exception as e:
             current_time = time.time()
             error_message = str(e)
-            
+
             if error_message != last_error or (current_time - last_logged_time) > cooldown_period:
                 logging.error(f"Exception occured: {e}", exc_info=True)
                 last_error = error_message
