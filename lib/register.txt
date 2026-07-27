@@ -1,0 +1,6 @@
+Tool_Name, Brand, Tool_Function, SUNet_Facing_IP_Address ,MAC_Address, Data_Directory, Folder1, Folder2, Folder3, Folder4, Folder5
+Savannah, Cambridge, ALD, 192.168.140.50, 98-90-96-9D-BC-59, C:\Cambridge\Nanotech\Logfile\Pressure, C:\Cambridge\Nanotech\Logfile\Heater
+MVD, Cambridge, ALD, 192.168,140, 9C-4E36-A2-1F-5C, C:\Cambridge\NanoTech\archive\Logfile\Pressure, C:\Cambridge\NanoTech\archive\Logfile\Heater
+
+
+
