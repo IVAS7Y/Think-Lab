@@ -1,0 +1,10 @@
+# Where collected files will be stored.
+archive = "var/archive"
+
+# Copy this block for each instrument.
+[[machines]]
+name = "example-machine"
+enabled = false
+sources = [
+  { path = "C:\\path\\to\\instrument\\data", dataset = "raw" },
+]
