@@ -15,3 +15,11 @@ sources = [
   { path = "C:\\Cambridge\\NanoTech\\archive\\Logfile\\Pressure", dataset = "pressure" },
   { path = "C:\\Cambridge\\NanoTech\\archive\\Logfile\\Heater", dataset = "heating" },
 ]
+
+[[machines]]
+name = "fiji1"
+enabled = false
+sources = [
+  { path = "", dataset = "" },
+  { path = "", dataset = "" },
+]
