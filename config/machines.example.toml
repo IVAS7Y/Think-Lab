@@ -1,0 +1,17 @@
+archive = "var/oak"
+
+[[machines]]
+name = "savannah"
+enabled = false
+sources = [
+  { path = "C:\\Cambridge\\Nanotech\\Logfile\\Pressure", dataset = "pressure" },
+  { path = "C:\\Cambridge\\Nanotech\\Logfile\\Heater", dataset = "heating" },
+]
+
+[[machines]]
+name = "mvd"
+enabled = false
+sources = [
+  { path = "C:\\Cambridge\\NanoTech\\archive\\Logfile\\Pressure", dataset = "pressure" },
+  { path = "C:\\Cambridge\\NanoTech\\archive\\Logfile\\Heater", dataset = "heating" },
+]
