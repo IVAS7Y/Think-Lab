@@ -1,0 +1,30 @@
+  GNU nano 8.7.1                        instrument-upload.timer
+[Unit]
+Description=Upload Think-Lab instrument staging data to Oak twice daily
+
+[Timer]
+OnCalendar=*-*-* 08:30:00
+OnCalendar=*-*-* 20:30:00
+Persistent=true
+Unit=instrument-upload.service
+
+[Install]
+WantedBy=timers.target
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        [ File 'instrument-upload.timer' is unwritable ]
+^G Help         ^O Write Out    ^F Where Is     ^K Cut          ^T Execute      ^C Location
+^X Exit         ^R Read File    ^\ Replace      ^U Paste        ^J Justify      ^/ Go To Line
