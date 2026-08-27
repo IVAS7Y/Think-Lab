@@ -1,0 +1,15 @@
+[Unit]
+Description=Pull recent instrument data to Think-Lab staging
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=think-lab
+Group=think-lab
+Environment=HOME=/home/think-lab
+ExecStart=/usr/bin/python3 /opt/think-lab/src/think_lab.py pull
+TimeoutStartSec=6h
+Nice=10
+NoNewPrivileges=true
+PrivateTmp=true

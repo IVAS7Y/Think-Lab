@@ -1,0 +1,15 @@
+[Unit]
+Description=Remove Think-Lab staging files retained for more than 30 days
+ConditionPathIsDirectory=/srv/instrument-data
+After=local-fs.target
+
+[Service]
+Type=oneshot
+User=think-lab
+Group=think-lab
+Environment=HOME=/home/think-lab
+ExecStart=/usr/bin/python3 /opt/think-lab/src/think_lab.py cleanup --delete
+TimeoutStartSec=1h
+Nice=10
+NoNewPrivileges=true
+PrivateTmp=true

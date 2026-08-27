@@ -1,0 +1,45 @@
+[settings]
+staging_root = "/srv/instrument-data"
+recent_days = 30
+retention_days = 30
+minimum_free_gib = 2
+minimum_valid_time = "2026-08-14T00:00:00-07:00"
+oak_host = "dtn.oak.stanford.edu"
+oak_user = "plansf"
+oak_root = "/oak/stanford/orgs/nano"
+oak_identity_file = "/home/think-lab/.ssh/id_ed25519_oak"
+
+[[instruments]]
+id = "mvd"
+display_name = "MVD"
+enabled = true
+mount = "/mnt/mvd"
+oak_directory = "MVD"
+
+[[instruments]]
+id = "fiji1"
+display_name = "Fiji 1"
+enabled = true
+mount = "/mnt/fiji1"
+oak_directory = "Fiji1"
+
+[[instruments]]
+id = "fiji2"
+display_name = "Fiji 2"
+enabled = true
+mount = "/mnt/fiji2"
+oak_directory = "Fiji2"
+
+[[instruments]]
+id = "savannah"
+display_name = "Savannah"
+enabled = true
+mount = "/mnt/savannah"
+oak_directory = "Savannah"
+
+[[instruments]]
+id = "fiji3"
+display_name = "Fiji 3"
+enabled = false
+mount = "/mnt/fiji3"
+oak_directory = "Fiji3"

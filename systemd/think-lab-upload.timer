@@ -1,0 +1,12 @@
+[Unit]
+Description=Upload Think-Lab staging data to Oak twice daily
+
+[Timer]
+OnCalendar=*-*-* 08:30:00
+OnCalendar=*-*-* 20:30:00
+Persistent=true
+AccuracySec=1min
+Unit=think-lab-upload.service
+
+[Install]
+WantedBy=timers.target

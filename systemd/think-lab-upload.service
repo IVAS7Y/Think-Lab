@@ -1,0 +1,15 @@
+[Unit]
+Description=Upload staged instrument data from Think-Lab to Oak
+Wants=network-online.target
+After=network-online.target think-lab-pull.service
+
+[Service]
+Type=oneshot
+User=think-lab
+Group=think-lab
+Environment=HOME=/home/think-lab
+ExecStart=/usr/bin/python3 /opt/think-lab/src/think_lab.py upload --execute
+TimeoutStartSec=6h
+Nice=10
+NoNewPrivileges=true
+PrivateTmp=true

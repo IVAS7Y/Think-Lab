@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.log
+.venv/
+
+# Never commit credentials or private keys.
+*.credentials
+.smb-*
+id_*
+!*.pub.example
